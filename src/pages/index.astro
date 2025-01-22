@@ -47,7 +47,7 @@ const posts = data.posts.nodes
 				<article class="rounded-lg bg-white shadow-lg p-5 h-full flex flex-col items-start justify-between">
 					<div>
 						{post.featuredImage?.node?.sourceUrl ? (
-							<img
+							<Image
 								class="w-full object-cover aspect-2/3 mb-5"
 								alt={`Featured image for ${post.title}`}
 								src={post.featuredImage.node.sourceUrl}
